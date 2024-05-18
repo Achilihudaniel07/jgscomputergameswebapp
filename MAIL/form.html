@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeffrey's Gaming Store</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+    
+        <h1 class="text-center mb-3">Contact Me</h1>
+        <form action="send_email.php" method="post">
+            <div class="row mb-1">
+                <div class="col">
+                    <label class="form-label">First Name</label>
+                    <input type="text" name="firstName" class="form-control" placeholder="First name"
+                        aria-label="First name" required>
+                </div>
+                <div class="col">
+                    <label class="form-label">Last Name</label>
+                    <input type="text" name="lastName" class="form-control" placeholder="Last name"
+                        aria-label="Last name" required>
+                </div>
+            </div>
+            <div class="row mb-1">
+                <div class="col">
+                    <label class="form-label">Email</label>
+                    <input type="email" name="email" class="form-control" placeholder="Email"
+                        aria-label="Email" required>
+                </div>
+                <div class="col">
+                    <label class="form-label">Phone (optional)</label>
+                    <input type="text" name="phone" class="form-control" placeholder="Phone"
+                        aria-label="Phone">
+                </div>
+            </div>
+            <div class="row mb-1">
+                <div class="col">
+                    <label class="form-label">Subject</label>
+                    <input type="text" name="subject" class="form-control" placeholder="Subject"
+                        aria-label="Subject" required>
+                </div>
+            </div>
+            <div class="row mb-1">
+                <div class="col">
+                    <label class="form-label">Message</label>
+                    <textarea type="text" name="message" class="form-control" placeholder="Message"
+                        aria-label="Message" required></textarea>
+                </div>
+            </div>
+            <input type="submit" >
+        </form>
+
+    </div>
+    
+
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+</body>
+</html>
