@@ -53,8 +53,9 @@ require_once '../config.php';
 
     if ($phpmailer->send()) {
         echo "<script> alert('Email sent successfully!') </script>";
+        $date = date('d/m/Y');
 
-        $newswql = "INSERT INTO orders (name,email,message) VALUES ('$name','$email','$message')";
+        $newswql = "INSERT INTO orders (name,email,message,date) VALUES ('$name','$email','$message','$date')";
         $newquery = mysqli_query($conn, $newswql);
 
 

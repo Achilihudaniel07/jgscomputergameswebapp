@@ -254,7 +254,11 @@ while($row = mysqli_fetch_assoc($result)){
                   <small class='text-body-secondary '>$description</small>
                 </div>
                 <span class='text-body-secondary'>$$price</span>
-              </li>
+                
+                <div>
+                <a href='unsave.php?pid=$pid'><button class='box-shadow shadow btn btn-primary ms-2' style='border:none;'>X</button></a>
+                </div>
+                </li>
               ";
 
               $cartDetails .= $title . " - $" . $price . "\n"; // Use newline as separator
@@ -264,7 +268,6 @@ while($row = mysqli_fetch_assoc($result)){
             }
 
           ?>
-
           <li class="list-group-item d-flex justify-content-between">
             <span>Total (USD)</span>
             <strong>$<?php echo $total?></strong>

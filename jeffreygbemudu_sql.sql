@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: May 17, 2024 at 10:19 AM
+-- Generation Time: May 19, 2024 at 06:56 PM
 -- Server version: 8.0.31
 -- PHP Version: 8.0.26
 
@@ -37,18 +37,14 @@ CREATE TABLE IF NOT EXISTS `cart` (
   `price` varchar(255) NOT NULL,
   `status` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `cart`
 --
 
 INSERT INTO `cart` (`id`, `name`, `unique_id`, `product`, `product_id`, `price`, `status`) VALUES
-(8, 'Chukwudulue Isaac', '9pF0jVbgKu', 'call of duty', '1049319719', '10', 'available'),
-(6, 'Chukwudulue Isaac', '9pF0jVbgKu', 'call of duty', '1049319719', '10', 'available'),
-(7, 'Chukwudulue Isaac', '9pF0jVbgKu', 'call of duty', '1049319719', '10', 'available'),
-(9, 'admin', '12wyet4567', 'call of duty', '1049319719', '10', 'available'),
-(10, 'customer1', '747yyrtwvc', 'weer', '1497368198', '50', 'available');
+(12, 'customer1', '747yyrtwvc', 'call of duty', '1049319719', '10', 'available');
 
 -- --------------------------------------------------------
 
@@ -62,15 +58,18 @@ CREATE TABLE IF NOT EXISTS `orders` (
   `name` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `message` text NOT NULL,
+  `date` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `orders`
 --
 
-INSERT INTO `orders` (`id`, `name`, `email`, `message`) VALUES
-(1, 'IsaacChukwudulue', 'zikkyychukwudulue@gmail.com', 'call of duty - $10\r\n');
+INSERT INTO `orders` (`id`, `name`, `email`, `message`, `date`) VALUES
+(1, 'IsaacChukwudulue', 'zikkyychukwudulue@gmail.com', 'call of duty - $10\r\n', '15/05/2024'),
+(2, 'DanielAchilihu', 'achilihudaniel53@gmail.com', 'call of duty - $10\r\n', '16/05/2024'),
+(4, 'DanielAchilihu', 'achilihudaniel53@gmail.com', 'call of duty - $10\r\n', '19/05/2024');
 
 -- --------------------------------------------------------
 
